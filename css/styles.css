@@ -157,8 +157,6 @@ ol {
 	color: var(--brand-p-color)
 }
 
-
-
 .header-cont:hover,
 .header-cont:focus {
 	color: var(--brand-onfocus-color);
@@ -209,17 +207,14 @@ ol {
 
 
 /* Benefits */
-
-
 .benefits-list {
 	display: flex;
+	gap: 30px;
 }
 
 .benefits-item {
 	width: calc((100% - 90px) / 4);
-}
-.benefits-item +.benefits-item {
-	margin-left: 30px;
+
 }
 
 .benefits-title {
@@ -237,8 +232,8 @@ ol {
 	letter-spacing: 0.03em;
 }
 
-
 /* About */
+
 .about {
 	padding-top: 0;
 }
@@ -254,10 +249,7 @@ ol {
 
 .about-list {
 	display: flex;
-}
-
-.about-item + .about-item {
-	margin-left: 30px;
+	gap: 30px;
 }
 
 /* Team */
@@ -288,10 +280,7 @@ ol {
 
 .team-list {
 	display: flex;
-}
-
-.team-item + .team-item {
-	margin-left: 30px;
+	gap: 30px;
 }
 
 .team-descriptoin {
@@ -305,7 +294,6 @@ ol {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
-	
 	text-align: center;
 	letter-spacing: 0.03em;
 }
@@ -329,6 +317,7 @@ ol {
 	display: inline-block;
 	margin-bottom: 20px;
 }
+
 .logo-studio-footer {
 	color: var(--brand-alt-bgd-color);
 }
@@ -375,11 +364,12 @@ ol {
 	display: flex;
 	margin-bottom: 50px;
 	justify-content: center;
+	gap: 8px;
 }
 
-.portfolio-item +.portfolio-item {
+/* .portfolio-item +.portfolio-item {
 	margin-left: 8px;
-}
+} */
 
 .portfolio-btn {
 	padding: 6px 22px;
@@ -401,9 +391,13 @@ ol {
 	background-color: var(--brand-onfocus-color);
 	color: var(--brand-alt-bgd-color);
 }
-.portfolio-btn:hover {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
 	background-color: var(--brand-onfocus-color);
 	color: var(--brand-alt-bgd-color);
+
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 
 /* Projects */
@@ -411,11 +405,18 @@ ol {
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
+	gap: 30px;;
 }
 
-.projects-item {
-	margin: 15px;
+.projects-link {
+	display: block;
+	/* background: #FFFFFF;
+	border: 1px solid #EEEEEE; */
+}
+
+.projects-link:hover,
+.projects-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* .projects-item:nth-child(3n + 3) {
